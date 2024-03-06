@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org"
+	th:replace="normal/base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Home Page</title>
+</head>
+<body>
+	<section>
+
+		<div class="container">
+			<div class="card ">
+				<div class="card-body my-5">
+					<div class="container text-center">
+						<img th:src="@{'/img/contact1.png'}" alt=""
+							style="height: 200px; width: 200px" class="my_profile_picture" />
+					</div>
+					<h1 class="text-center mt-3 bg-heading fst-italic">Start
+						Adding Your contact...</h1>
+					<div class="d-grid container">
+						<a th:href="@{/user/add-contact}"
+							class="btn bg-button text-uppercase mt-4 btn-block text-white">Add
+							New contact</a>
+
+						<hr />
+						<h3 class=" my-4 bg-heading">DONATE US</h3>
+						<input type="text" class="form-control my-2"
+							placeholder="Enter amount here" />
+							<button onclick="paymentStrat()" id="paymentField"
+							class="btn bg-button text-uppercase mt-4 btn-block text-white">Pay
+							New contact</button>
+					
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script>
+$(document).ready(()=>{
+	$('.item').removeClass(active)
+	$('#home-link').addClass(active)
+})
+</script>
+	</section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* body{
+	background: #ecf0f1;
+} */
+.bg-primary {
+	background: #002633 !important; /*  for navbar */
+}
+
+.bg-button {
+	background-color: #004080; /* 10% - Accent Color */
+}
+
+.bg-button:hover {
+	background-color: #002633; /* Darker shade for hover effect */
+}
+
+.bg-heading {
+	color: #004080; /* 10% - Accent Color */
+	text-align: center;
+}
+
+.bg-text {
+	color: #a1d9f7;
+}
+
+.bg-label {
+	color: #333;
+}
+
+.login-container {
+	background-color: #d0d0d0; /* 30% - Secondary Color */
+	
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+		url(../img/img.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.login-container {
+	background-color: #d0d0d0; /* 30% - Secondary Color */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	width: 150px; /* Set the desired width */
+	height: auto; /* Maintain the aspect ratio */
+	margin-left: 30px; /* Adjust the margin as needed */
+}
+/* .my-card{
+	padding: 20px;
+	background: #ffffff;
+} */
+
+/* Media Query for smaller screens (adjust as needed) */
+@media ( max-width : 768px) {
+	.banner {
+		height: 70vh; /* Adjust the height for smaller screens */
+	}
+}
+
+/* sidebar style */
+@media only screen and (max-width:600px) {
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background: white;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+	}
+	.content {
+		margin-left: 0% !important;
+	}
+}
+
+.sidebar {
+	width: 18%;
+	background: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 9999999999999999;
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: grey;
+}
+
+.sidebar a:hover {
+	background: #e2e2e2;
+}
+
+.sidebar .divider {
+	height: .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px
+}
+
+.content {
+	margin-left: 20%;
+}
+
+.sidebar .crossBtn {
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 36px;
+	cursor: pointer;
+}
+.my_profile_picture{
+	width:35px;
+	height: 35px;
+	object-fit:cover;
+	border-radius: 50%;
+	border:1px solid black;
+}
+.search-container{
+	position:  relative;
+}
+
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display:none;
+}
+.active{
+	background: #002633 !important;
+	color:white !important;
+}

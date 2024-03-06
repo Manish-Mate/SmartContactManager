@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org"
+	th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Home Page</title>
+
+</head>
+<body>
+	<section>
+
+
+		<div class="container mt-3">
+			<div class="row">
+				<!-- 
+			<div class="col-md-4">
+			<img th:src="@{img/login.jpg}" alt="" />
+			</div> -->
+				<div class="col-md-4 offset-md-4">
+					<div class="card login-container ">
+						<div class="card-body ">
+							<h2 class="bg-heading pb-2"
+								style="border-bottom: 2px solid #666;">Login</h2>
+							<div th:if="${param.error}"
+								class="alert alert-danger text-center">Invalid Username
+								and Password</div>
+							<div th:if="${param.logout}"
+								class="alert alert-success text-center">You have been
+								logged out</div>
+							<div th:if="${param.change}"
+								class="alert alert-success text-center"><p th:text="${param.change}"></p></div>
+							<form th:action="@{/dologin}" method="post" class="form"
+								id="Login-form">
+
+								<div class="form-outline bg-label mb-4">
+									<label class="form-label " for="typeEmailX">Username:</label> <input
+										type="text" id="typeEmailX" class="form-control "
+										name="username" />
+								</div>
+								<div class="form-outline  mb-4">
+									<label class="form-label bg-label" for="typePasswordX">Password:</label>
+									<input type="password" id="typePasswordX" class="form-control "
+										name="password" />
+								</div>
+
+
+								<div class="container text-center mb-3">
+									
+
+									<button class="btn bg-button text-white btn-lg px-5 mb-3"
+										type="submit">Login</button>
+										
+										<p class="mb-1 bg-label">
+										Don't have an account? <a href="/signup" class=" ">Sign Up</a>
+									</p>
+									<p class="additional-text">
+										Forgot your password? <a th:href="@{/forget}" href="#">Reset
+											it here</a>
+									</p>
+								</div>
+
+
+							</form>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</section>
+
+
+
+
+</body>
+</html>
